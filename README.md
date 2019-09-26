@@ -1,5 +1,5 @@
 # Faster Lectures
-Using a conglomerate of cutting edge technology, trim down the length of time university lectures take to digest.
+Using a conglomerate of cutting edge technology, trim down the length of time university lectures take to digest. Reach improvments of anywhere between 10-15x
 
 ### Abstract
 Takes a video lecture file, removes coughs, sneezes, silences, "umm"'s etc... Applies some machine learning to grab only the vital moments in the lecture and returns a lecture with all pertinent information retained, only difference being that it's up to 10x faster to consume.
@@ -13,9 +13,11 @@ Takes a video lecture file, removes coughs, sneezes, silences, "umm"'s etc... Ap
 * Python >= 3.5
 
 ### Foreword
-This project was originally a thought I had sitting through boring lectures. Then it became a extravagant joke for this video I made to be shared with mates. Finally it became an idea with some merit behind it which is why I decided to throw it up on here, because I use it weekly. If you've got a few minutes, I ask that you give the original video a shot because a lot of what's to come will make far more sense. This project has turned many of my 2 hour lectures into 14 minute ones without losing information, [although...](https://xkcd.com/1319/)
+This project was originally a thought I had sitting through boring lectures. Then it became a extravagant joke for [this video](https://www.youtube.com/watch?v=nbqitGDctgU) I made to be shared with mates. Finally it became an idea with some merit behind it which is why I decided to throw it up on here, because I use it weekly. If you've got a few minutes, I ask that you give the original video a shot because a lot of what's to come will make far more sense. This project has turned many of my 2 hour lectures into 14 minute ones without losing information, [although...](https://xkcd.com/1319/)
 
-Inline video image clickthrough to youtube (video is WIP)
+<div align="center">
+  <a align="center" href="https://www.youtube.com/watch?v=nbqitGDctgU"><img align="center" src="https://img.youtube.com/vi/nbqitGDctgU/0.jpg" width="300px"></a>
+</div>
 
 ### Removing Silence, Coughs, "Umm"s and "Uhh"s
 Was going to write this myself but carykh was already all over it, [here](https://github.com/carykh/jumpcutter)'s the project and [here](https://www.youtube.com/watch?v=DQ8orIurGxw)'s a entertaining video carykh's made on the script. Script does ok on longer videos but where it really falls apart is when your OS cries about a directory having over 300,000 items. So we grab our lecture video, split it into 30min segments, remove the silences and join the processed segments back into one video. (You may need to play with `--silent_threshold`)
@@ -55,7 +57,3 @@ To go full circle, the condensed transcript could then be fed into a CNN trained
 
 ### Legality
 You're responsible for knowing whether you're allowed to download/keep a local copy of the lecture video or extract a lecturer's slideshow since they're usually copyright by default. Now, I'm not endorsing going around these restrictions... but you'll have my respect for caring about your learning!
-
-### Video references
-* \[1] https://harrisonm.com
-* \[2] Obviously there will be more when I get around to the video
